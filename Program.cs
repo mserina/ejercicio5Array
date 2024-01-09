@@ -11,12 +11,51 @@
 
             /// Pedir al usuario los valores del vector 1 y 2
             
-             foreach (int i in vector1)
+            //VECTOR1
+            for(int i = 0; i < vector1.Length; i++)
              {
-                    Console.WriteLine("Escribe numeros para el vector 1");
-                    vector1[i] = Convert.ToInt32(Console.ReadLine());
+                 Console.WriteLine("Escribe numeros para el vector 1");
+                 vector1[i] = Convert.ToInt32(Console.ReadLine());
+                 Console.WriteLine("");
              }
-            Console.WriteLine(vector1[1]);
+
+             Console.WriteLine("VECTOR1");
+             foreach(int imprimirLista in vector1)
+             {
+                Console.WriteLine(imprimirLista);
+                Console.WriteLine("");
+             }
+
+
+            //VECTOR2
+            for (int i = 0; i < vector2.Length; i++)
+            {
+                Console.WriteLine("Escribe numeros para el vector 2");
+                vector2[i] = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("");
+            }
+
+            Console.WriteLine("VECTOR2");
+
+            foreach (int imprimirLista2 in vector2)
+            {
+                Console.WriteLine(imprimirLista2);
+            }
+
+
+            //VECTOR3
+            for (int i = 0; i < vector3.Length; i++)
+            {
+                vector3[i] = vector1[i] + vector2[i];
+                Console.WriteLine("");
+            }
+
+            Console.WriteLine("VECTOR3");
+
+            foreach (int imprimirLista3 in vector3)
+            {
+                Console.WriteLine(imprimirLista3);
+            }
         }
     }
 }
